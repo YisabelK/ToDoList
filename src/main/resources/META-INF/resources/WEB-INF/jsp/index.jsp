@@ -13,14 +13,14 @@
     <h2 class="logo">TODOLIST</h2>
     <nav class="navigation">
         <a href="#">Home</a>
-        <a href="#">About</a>
+        <a href="#">Help</a>
         <a href="#">Todos</a>
         <a href="#">Contact</a>
         <button class="btnLogin-popup"><ion-icon name="person-outline"></ion-icon></button>
     </nav>
 </header>
-<div>
-    Hello World, Welcome to TODOLIST!
+<div class="todo-app">
+   <h2>Hello World, Welcome to TODOLIST!</h2>
 </div>
 
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
