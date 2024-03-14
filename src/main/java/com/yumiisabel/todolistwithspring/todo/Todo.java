@@ -1,5 +1,8 @@
 package com.yumiisabel.todolistwithspring.todo;
 
+import jakarta.validation.constraints.Size;
+import org.springframework.boot.convert.DataSizeUnit;
+
 import java.time.LocalDate;
 
 public class Todo {
@@ -17,6 +20,7 @@ public class Todo {
 
     private int id;
     private String username;
+    @Size(min=2, message = "Enter atleast 2 characters")
     private String description;
     private LocalDate targetDate;
     private boolean done;

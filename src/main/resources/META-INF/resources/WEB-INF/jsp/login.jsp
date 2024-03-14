@@ -1,35 +1,15 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Login Page</title>
+<%@include file="common/header.jspf"%>
+<title>Login</title>
 </head>
 <body>
-<header>
-    <h2 class="logo">TODOLIST</h2>
-    <nav class="navigation">
-        <a href="#">Home</a>
-        <a href="#">Help</a>
-        <a href="#">Todos</a>
-        <a href="#">Contact</a>
-        <button class="btnLogin-popup"><ion-icon name="person-outline"></ion-icon></button>
-    </nav>
-</header>
+<%@include file="common/navigation.jspf"%>
 <div class="todo-app">
     <h2>Welcome to login page!</h2>
     <pre>${errorMessage}</pre>
-    <form method="post">
-        Name:<input type="text" name="name">
-        Password:<input type="password" name="password">
+    <form class="login" method="post">
+        <input type="text" name="name" placeholder="Name">
+        <input type="password" name="password" placeholder="password">
         <input type="submit">
     </form>
 </div>
-
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
-</html>
+<%@include file="common/footer.jspf"%>
