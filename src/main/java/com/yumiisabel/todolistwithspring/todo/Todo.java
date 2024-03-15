@@ -1,10 +1,14 @@
 package com.yumiisabel.todolistwithspring.todo;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 import jakarta.validation.constraints.Size;
 import org.springframework.boot.convert.DataSizeUnit;
 
 import java.time.LocalDate;
 
+@Entity
 public class Todo {
     public Todo(int id, String username, String description, LocalDate targetDate, boolean done) {
         this.id = id;
@@ -13,11 +17,10 @@ public class Todo {
         this.targetDate = targetDate;
         this.done = done;
     }
-
     public Todo() {
-
     }
-
+    @Id
+    @GeneratedValue
     private int id;
     private String username;
     @Size(min=2, message = "Enter atleast 2 characters")
