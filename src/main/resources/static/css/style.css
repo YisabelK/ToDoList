@@ -195,4 +195,30 @@ fieldset{
     justify-content: center;
     align-items: center;
 }
+.delete-btn{
+    width: 130px;
+    height: 50px;
+    text-decoration: none;
+    color: red;
+    padding: 6px 15px;
+    border: 0;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.update-btn{
+    width: 130px;
+    height: 50px;
+    text-decoration: none;
+    color: green;
+    padding: 6px 15px;
+    border: 0;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.delete-btn:hover,
+.update-btn:hover {
+    background: #fff;
+}
 
